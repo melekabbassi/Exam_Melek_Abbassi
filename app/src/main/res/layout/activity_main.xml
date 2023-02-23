@@ -37,7 +37,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/login" />
 
-    <Button
+    <TextView
         android:id="@+id/ButtonForgotPassword"
         android:layout_width="220dp"
         android:layout_height="wrap_content"

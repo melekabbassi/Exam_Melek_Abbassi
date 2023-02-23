@@ -10,13 +10,14 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int ACCOUNT_CREATION_ACTIVITY_ID = 10;
     EditText editTextEmail;
     EditText editTextPassword;
-    Button buttonForgotPassword;
+    TextView buttonForgotPassword;
     Button buttonLogin;
     Button buttonRegister;
 
@@ -28,13 +29,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextEmail = (EditText) findViewById(R.id.EditTextEmail);
         editTextPassword = (EditText) findViewById(R.id.EditTextPassword);
 
-        buttonForgotPassword = (Button) findViewById(R.id.ButtonForgotPassword);
+        buttonForgotPassword = (TextView) findViewById(R.id.ButtonForgotPassword);
         buttonLogin = (Button) findViewById(R.id.ButtonLogin);
         buttonRegister = (Button) findViewById(R.id.ButtonRegister);
 
         ((Button) findViewById(R.id.ButtonLogin)).setOnClickListener(this);
         ((Button) findViewById(R.id.ButtonRegister)).setOnClickListener(this);
-        ((Button) findViewById(R.id.ButtonForgotPassword)).setOnClickListener(this);
+        ((TextView) findViewById(R.id.ButtonForgotPassword)).setOnClickListener(this);
     }
 
     @Override
